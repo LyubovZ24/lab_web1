@@ -20,7 +20,7 @@ jobs:
         run: python -m pip install uvicorn
 
       - name: Pipenv sync
-        run: |
-        pipenv sync
+        run: pipenv sync
+
       - name: Start tests
         run: pipenv run python -m pytest my_test.ru
