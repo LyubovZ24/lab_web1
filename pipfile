@@ -1,5 +1,6 @@
 [packages]
 fastapi = '*'
+Flask = '*'
 pydantic = '*'
 uvicorn = '*'
 [dev-packages]
