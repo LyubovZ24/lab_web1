@@ -4,7 +4,9 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-
+flask = '*'
+gunicorn = '*'
+flask_wtf = "*"
 [dev-packages]
 
 [requires]
