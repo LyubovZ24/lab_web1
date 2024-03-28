@@ -16,6 +16,9 @@ jobs:
       - name: Install pipenv
         run: python -m pip install pipenv
 
+      - name: Install uvicorn
+        run: pip3 install uvicorn
+
       - name: Pipenv sync
         run: |
         pipenv sync
