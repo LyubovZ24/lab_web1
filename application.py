@@ -14,8 +14,8 @@ from werkzeug.utils import secure_filename
 from image_processing import perform_image_processing
 
 SECRET_KEY = "secret"
-RECAPTCHA_PUBLIC_KEY = '6LcFllIpAAAAAMwLYJGR6XRWWECwb6OLVKCBKpGi'
-RECAPTCHA_PRIVATE_KEY = '6LcFllIpAAAAAKTj5bt2JwAhFD94wvYQY7VQ1Q5T'
+RECAPTCHA_PUBLIC_KEY = '6Lci-6cpAAAAAF1dLO8oz3cIdMsXQAtIiuWv-1fd'
+RECAPTCHA_PRIVATE_KEY = '6Lci-6cpAAAAAMyCf1g2nwp7_22ID8CbesFxF1s_'
 
 
 class ImageForm(FlaskForm):
