@@ -1,0 +1,29 @@
+<!DOCTYPE  html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        {% if filepath != '' %}
+        <img src="{{ filepath }}"/>
+        {% endif %}
+
+        {% if table != '' %}
+        <img src="{{ table }}"/>
+        {% endif %}
+
+        <form method="POST" action="/add" enctype="multipart/form-data">
+            <div style="justify-content: center">
+                <div style="justify-content: center">  {{ form.hidden_tag() }} </div>
+                <div style="justify-content: center, margin: 10px">  {{ form.frame_width.label }} </div>
+                <div style="justify-content: center, margin: 10px">  {{ form.frame_width }} </div>
+                <div style="justify-content: center, margin: 10px">  {{ form.color.label }} </div>
+                <div style="justify-content: center, margin: 10px">  {{ form.color }} </div>
+                <div style="justify-content: center, margin: 10px">  {{ form.upload }} </div>
+                <div style="justify-content: center, margin: 10px">  {{ form.recaptcha }} </div>
+            </div>
+            <input type="submit">
+        </form>
+    </body>
+</html>
